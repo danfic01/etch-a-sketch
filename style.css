@@ -14,8 +14,12 @@
 }
 
 .square {
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 40px;
+    min-height: 40px;
     border: 2px dotted cornflowerblue;
     background: white;
+}
+
+#marked {
+    background-color: cornflowerblue;
 }

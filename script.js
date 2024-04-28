@@ -1,5 +1,17 @@
 createGrid(16, 16);
 
+// add an event listener to check when the mouse enters the space of a square
+document.addEventListener('mousemove', (event) => {
+
+    let target = event.target; // declare target variable to store element touched by mouse
+
+    // set target element id to 'marked' if its class is 'square'
+    if(target.className === 'square') {
+        target.setAttribute('id', 'marked');
+    }
+
+})
+
 // declare a function to create a grid of squares on the webpage
 function createGrid (columns, rows) {
     
