@@ -1,8 +1,16 @@
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 24px; 
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
+    margin: 0 auto;
 }
 
 .column {
@@ -10,16 +18,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .square {
-    min-width: 40px;
-    min-height: 40px;
+    /*min-width: 30px;
+    min-height: 30px;*/
     border: 2px dotted cornflowerblue;
     background: white;
 }
 
 #marked {
     background-color: cornflowerblue;
+}
+
+#reset {
+    border: 2px solid cornflowerblue;
+    border-radius: 8px;
+    background: white;
+    color: cornflowerblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    padding: 4px 8px;
+    min-width: 100px;
+    min-height: 40px;
+    margin: 0 auto;
+}
+
+#reset:active {
+    background: cornflowerblue;
+    color: white;
 }
